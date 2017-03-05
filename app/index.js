@@ -1,8 +1,8 @@
-import * as myLodash from 'lodash/fp';
+import {join as strJoin} from 'lodash/fp';
 
 function component () {
     var element = document.createElement('div');
-    element.innerHTML = myLodash.join(' ')(['Goodya', 'Morn', 'webpack']);
+    element.innerHTML = strJoin(' ')(['Good', 'Morning', 'webpack']);
     return element;
 }
 
